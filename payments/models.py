@@ -27,4 +27,4 @@ class Payment(models.Model):
     paid_value = models.DecimalField(max_digits=12, decimal_places=2)
 
     def __str__(self):
-        return {self.type}-{self.paid_value}-{self.payment_date}
+        return str(self.type)
